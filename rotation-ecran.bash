@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Detection du peripherique tactile
+#Détection du peripherique tactile
 TOUCH_DEVICE=$(xinput list --name-only | grep -Ei 'touchscreen|tp' | head -n 1)
 
 if [ -z "$TOUCH_DEVICE" ]; then
